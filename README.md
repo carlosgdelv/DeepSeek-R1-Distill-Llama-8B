@@ -369,13 +369,6 @@ class ModelInference:
                 trust_remote_code=True
             )
             
-            try:
-                import intel_extension_for_pytorch as ipex
-                self.model = ipex.optimize(self.model, dtype=torch.bfloat16)
-                logger.info("Intel Extension habilitado")
-            except ImportError:
-                logger.warning("Intel Extension no disponible")
-            
             self.model.eval()
             
             load_time = time.time() - start_time
