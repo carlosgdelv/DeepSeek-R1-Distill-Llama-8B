@@ -731,8 +731,16 @@ curl -X POST http://localhost:8000/generate \
 ✅ LISTO PARA VENDER
 Tu API está en:
 
+```bash
 URL: http://TU_IP:8000
+```
+
+```bash
 Docs: http://TU_IP:8000/docs
+```
+
+```bash
 API Key: La que se mostró al iniciar
+```
 
 FIN
