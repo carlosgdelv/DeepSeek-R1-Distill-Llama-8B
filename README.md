@@ -590,7 +590,6 @@ Type=simple
 User=REPLACE_USERNAME
 WorkingDirectory=/home/REPLACE_USERNAME/deepseek-api
 Environment="PATH=/home/REPLACE_USERNAME/deepseek-api/venv/bin"
-ExecStartPre=/home/REPLACE_USERNAME/deepseek-api/optimize_system.sh
 ExecStart=/home/REPLACE_USERNAME/deepseek-api/venv/bin/python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 1
 Restart=always
 RestartSec=10
