@@ -782,3 +782,19 @@ Protocolo: TCP
 5. Prueba:
 bashcurl http://79.116.179.99:8000/health
 ```
+
+### ✅ PLAN DE NEGOCIO
+
+
+Plan Pro: $499/mes
+
+Unlimited tokens
+100 req/min
+Priority support
+SLA 99.5%
+
+Marketing:
+
+Título: "Private LLM AI API - GDPR Compliant"
+USP: "Zero data retention, 100% private, no OpenAI tracking"
+Target: Startups europeas, healthcare, legal firms
