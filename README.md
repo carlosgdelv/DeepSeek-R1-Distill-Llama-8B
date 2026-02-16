@@ -719,11 +719,18 @@ curl -X POST http://localhost:8000/generate \
   -d '{"prompt":"Hello","max_length":50}'
 ```
 
-✅ LISTO PARA VENDER
-Tu API está en:
+### ✅ LISTO PARA VENDER
 
+Tu API está en: http://TU_IP:8000
+
+```bash
+curl ifconfig.me
+```
+
+```bash
 URL: http://TU_IP:8000
 Docs: http://TU_IP:8000/docs
 API Key: La que se mostró al iniciar
+```
 
 FIN
