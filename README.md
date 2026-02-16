@@ -608,6 +608,7 @@ sudo systemctl enable deepseek-api.service
 ### PASO 17: README CLIENTE
 
 ```bash
+```bash
 nano ~/deepseek-api/README.md
 ```
 
@@ -629,7 +630,7 @@ Header: `X-API-Key: YOUR_KEY`
 GET /health
 ```
 
-### Generate Text
+###Generate Text
 ```bash
 POST /generate
 Content-Type: application/json
@@ -653,19 +654,19 @@ Response:
 }
 ```
 
-## Performance
+##Performance
 - CPU: Intel i7 14th Gen (20 cores @ 5.0GHz)
 - RAM: 32GB DDR5
 - Throughput: ~15-25 tokens/second
 - Latency: <500ms first token
 
-## Privacy
+##Privacy
 - Zero data retention
 - Logs anonymized
 - Auto-delete after 7 days
 - GDPR compliant
 
-## Pricing
+##Pricing
 $299/month - Unlimited requests
 ```
 
@@ -676,7 +677,7 @@ cd ~/deepseek-api
 python3 -c "import secrets; print(secrets.token_urlsafe(48))"
 ```
 Copia el resultado y pégalo en config/.env en la línea SECRET_KEY=
-
+```
 
 ### PASO 18: GENERAR SECRET KEY
 
@@ -688,11 +689,17 @@ python3 -c "import secrets; print(secrets.token_urlsafe(48))"
 Copia el resultado y pégalo en config/.env en la línea SECRET_KEY=
 
 
+
+### PASO 18: GENERAR SECRET KEY
 ```bash
 cd ~/deepseek-api
 python3 -c "import secrets; print(secrets.token_urlsafe(48))"
 ```
+Copia el resultado y pégalo en config/.env en la línea SECRET_KEY=
 
+```bash
+nano config/.env
+```
 ### PASO 19: INICIAR
 
 ```bash
