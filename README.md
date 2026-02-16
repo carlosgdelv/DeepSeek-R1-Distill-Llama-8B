@@ -666,7 +666,7 @@ Response:
 - GDPR compliant
 
 ##Pricing
-$299/month - Unlimited requests
+$499/month - Unlimited requests
 ```
 
 
