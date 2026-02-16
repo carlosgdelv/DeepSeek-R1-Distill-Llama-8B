@@ -691,6 +691,15 @@ source venv/bin/activate
 sudo systemctl start deepseek-api.service
 ```
 
+```bash
+# 4. Recargar y arrancar
+sudo systemctl daemon-reload
+sudo systemctl start deepseek-api.service
+
+# 5. Ver logs
+sudo journalctl -u deepseek-api.service -f
+```
+
 
 ### PASO 20: VERIFICAR
 
