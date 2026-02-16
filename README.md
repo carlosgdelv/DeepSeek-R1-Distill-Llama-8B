@@ -610,8 +610,9 @@ sudo systemctl enable deepseek-api.service
 
 ```bash
 nano ~/deepseek-api/README.md
+```
 
-
+```bash
 # DeepSeek AI API - Private Instance
 
 ## Endpoints
@@ -668,17 +669,6 @@ Response:
 ##Pricing
 $299/month - Unlimited requests
 ```
-
-### PASO 18: GENERAR SECRET KEY
-
-```bash
-cd ~/deepseek-api
-python3 -c "import secrets; print(secrets.token_urlsafe(48))"
-```
-Copia el resultado y pégalo en config/.env en la línea SECRET_KEY=
-```
-
-
 
 
 ### PASO 18: GENERAR SECRET KEY
