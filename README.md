@@ -607,31 +607,30 @@ sudo systemctl enable deepseek-api.service
 
 ### PASO 17: README CLIENTE
 
-```bash
-```bash
-nano ~/deepseek-api/README.md
-```
 
 ```bash
+nano ~/deepseek-api/README.md
+
+
 # DeepSeek AI API - Private Instance
 
 ## Endpoints
 
 ### Base URL
-```
+
 https://your-server.com:8000
-```
+
 
 ### Authentication
 Header: `X-API-Key: YOUR_KEY`
 
 ### Health Check
-```bash
+
 GET /health
-```
+
 
 ###Generate Text
-```bash
+
 POST /generate
 Content-Type: application/json
 
@@ -640,7 +639,7 @@ Content-Type: application/json
   "max_length": 512,
   "temperature": 0.7
 }
-```
+
 
 Response:
 ```json
