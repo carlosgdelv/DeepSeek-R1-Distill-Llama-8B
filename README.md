@@ -734,3 +734,51 @@ API Key: La que se mostró al iniciar
 ```
 
 FIN
+
+
+### ✅ LISTO PARA VENDER
+
+Problema: Firewall bloqueando
+
+```bash
+# 1. Verificar firewall
+sudo ufw status
+
+# 2. Permitir puerto 8000
+sudo ufw allow 8000/tcp
+
+# 3. Reiniciar firewall
+sudo ufw reload
+
+# 4. Verificar que API escucha en 0.0.0.0
+sudo netstat -tulpn | grep 8000
+```
+
+
+```bash
+# Desde tu PC
+curl http://79.116.179.99:8000/health
+
+# Si no funciona, prueba local
+curl http://localhost:8000/health
+
+
+Solución:
+1. Obtén tu IP local:
+baship addr show | grep "inet " | grep -v 127.0.0.1
+2. Accede a tu router:
+
+Abre navegador: http://192.168.1.1 (o 192.168.0.1)
+Usuario/contraseña (mira etiqueta del router)
+
+3. Busca "Port Forwarding" o "NAT":
+
+Puerto externo: 8000
+Puerto interno: 8000
+IP interna: (la que te dio el comando anterior, ej: 192.168.1.X)
+Protocolo: TCP
+
+4. Guarda y reinicia router
+5. Prueba:
+bashcurl http://79.116.179.99:8000/health
+```
