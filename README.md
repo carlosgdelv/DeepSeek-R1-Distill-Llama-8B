@@ -651,7 +651,7 @@ Response:
   "model": "DeepSeek-R1-Distill-Llama-8B",
   "finish_reason": "stop"
 }
-```
+
 
 ##Performance
 - CPU: Intel i7 14th Gen (20 cores @ 5.0GHz)
@@ -678,18 +678,11 @@ python3 -c "import secrets; print(secrets.token_urlsafe(48))"
 Copia el resultado y pégalo en config/.env en la línea SECRET_KEY=
 ```
 
-### PASO 18: GENERAR SECRET KEY
-
-
-```bash
-cd ~/deepseek-api
-python3 -c "import secrets; print(secrets.token_urlsafe(48))"
-```
-Copia el resultado y pégalo en config/.env en la línea SECRET_KEY=
 
 
 
 ### PASO 18: GENERAR SECRET KEY
+
 ```bash
 cd ~/deepseek-api
 python3 -c "import secrets; print(secrets.token_urlsafe(48))"
@@ -699,6 +692,7 @@ Copia el resultado y pégalo en config/.env en la línea SECRET_KEY=
 ```bash
 nano config/.env
 ```
+
 ### PASO 19: INICIAR
 
 ```bash
